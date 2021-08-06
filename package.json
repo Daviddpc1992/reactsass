@@ -1,0 +1,48 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "React+Sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "\t",
+    "build": "webpack",
+    "dev": "webpack serve --mode development --open chrome --devtool eval-cheap-module-source-map"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Daviddpc1992/reactsass.git"
+  },
+  "author": "Daviddpc1992",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Daviddpc1992/reactsass/issues"
+  },
+  "homepage": "https://github.com/Daviddpc1992/reactsass#readme",
+  "dependencies": {
+    "core-js": "^3.15.2",
+    "json5": "^2.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "yaml": "^1.10.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/preset-env": "^7.14.8",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^4.0.0-alpha.0",
+    "css-loader": "^6.2.0",
+    "csv-loader": "^3.0.3",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "sass": "^1.36.0",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1",
+    "toml": "^3.0.0",
+    "webpack": "^5.47.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2",
+    "xml-loader": "^1.2.1",
+    "yamjs": "^0.6.11"
+  }
+}

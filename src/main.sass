@@ -1,0 +1,115 @@
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body, html
+    background-color: #262C3A
+
+header 
+    background: url('https://hyperpix.net/wp-content/uploads/2020/04/rick-and-morty-logo-font-free-download-1200x675.jpg')
+    background-size: 35%    
+    background-repeat: no-repeat
+    background-position: center
+    text-align: center
+    margin: auto
+    width: 80%
+    height: 10%
+    padding: 5%
+    background-color: #262C3A
+  
+
+header .title
+ 
+    opacity: 0
+
+.container 
+    width: 80%
+    margin: auto
+    background-color: #fff
+    border-radius: 10px
+
+
+
+.container .characters 
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    align-items: center
+    overflow: hidden
+    padding: 3%
+ 
+  
+
+.container .characters .box
+
+    padding: 3%
+    transition: all ease .5s
+    border: 1px dotted #ffffff00
+    text-align: center
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    color: #ffffff
+    overflow: hidden
+    cursor: pointer
+
+    
+
+
+.container .characters .box .overlay
+
+    opacity: 0
+    transition: .5s
+    background-color: #262C3A
+
+
+.container .characters .box:hover .overlay
+    -moz-transform: translateY(-100%)
+    -webkit-transform: translateY(-100%)
+    -o-transform: translateY(-100%)
+    -ms-transform: translateY(-100%)
+    transform: translateY(-100%)
+    opacity: 1
+    
+.container .characters .box .overlay .specie
+    font-family: 'get_schwiftyregular'
+    color: #11b0c5
+    margin: 0
+    text-shadow: #488465 0 -2px
+
+
+.paginado ul 
+    list-style: none
+    display: flex
+    justify-content: center
+
+.paginado .btnPaginado
+    font-size: 3em
+    margin-bottom: 0%
+    background-color: #ffffff00 
+
+.btn-check:focus+.btn ,.btn:focus
+    transition: all ease .5s
+    outline: 0
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 0%)
+
+.btn:hover
+    filter: invert(1)
+
+.filtros, .filtrosSelect
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+
+.form-select
+       border: 1px solid #ced4da00
+       background-image:url(../src/images/mas.svg)
+
+.form-select:focus 
+    border-color: #ffffff00
+    outline: 0
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 0%)
+
+.uk-search-default, .uk-search-input:focus
+    background-color: rgba(24, 235, 0, 0)
+    border-color: #fff
