@@ -1,33 +1,38 @@
 import React from 'react';
 import '../src/main.sass'
-const Filter = ({prev, next, onPrevious, onNext}) => {
-
-        const hnprevious = () => {
-                onPrevious()
-        }
-
-        
-        const hnnext = () => {
-               onNext() 
-        }
+const Filter = ({}) => {
     
     return (
-        <nav className="paginado">
-        <ul>{
-        prev ?
-        (<li><button type="button" class="btn btn-outline-secondary" onClick={hnprevious}><i class="fas fa-chevron-left"></i></button></li>)
-        : null
-}
-        
-{
-        next ?
-                (<li><button type="button" class="btn btn-outline-secondary" onClick={hnnext}><i class="fas fa-chevron-right"></i></button></li>)
-                : null
-}
-         
-               
-        </ul>
-        </nav>
+        <div className="filtros">
+            <div className="filtrosSelect">
+            
+            <div uk-filter="select">
+            <select class="form-select" aria-label="Default select example">
+            <option selected>Status🧬</option>
+            <option value="alive">Alive 💙</option>
+            <option value="dead">Dead 💔</option>
+            <option value="unknown">Unknown❔</option>
+            </select>
+            </div>
+            <div uk-filter="select">
+            <select class="form-select" aria-label="Default select example">
+            <option selected>Specie👾</option>
+            <option value="human">Human🦴</option>
+            <option value="dead">Alien 👽</option>
+            <option value="unknown">Unknown❔</option>
+            </select>
+            </div>
+            </div>
+<div class="uk-margin">
+    <form class="uk-search uk-search-default">
+      
+        <input class="uk-search-input" type="search" placeholder="Search"/>
+    </form>
+
+</div>
+</div>
+
+
 )
 
 

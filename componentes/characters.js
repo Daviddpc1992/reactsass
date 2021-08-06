@@ -1,5 +1,6 @@
 import React, { useState, useEffect, initialState} from 'react';
 import Pagination from '../componentes/pagination';
+import Filter from './filter';
 import '../src/main.sass'
 
 
@@ -53,11 +54,16 @@ const Characters = () => {
         <div className="container">
             <div className="characters">
                 <div className="row">
-   
-                {
+                <Filter/>
+                {    
                         character.map(item => (
+                
                             <div className="col-12 col-sm-4 col-md-3" >
                                 <div className="box" key={item.id}>
+                                <ul class="js-filter uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" uk-grid>
+                            <li class={item.gender}>
+                            </li>
+                            </ul>
                         
                         <img src={item.image} alt={item.name} />
                             <span className="linea"> </span>
@@ -67,7 +73,8 @@ const Characters = () => {
                             <p className="status">{item.status}</p>
                             </div>
                                 </div>
-                                </div>
+                        </div>
+                     
                     ))
                     }
                 </div>

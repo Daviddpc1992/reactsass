@@ -7,7 +7,8 @@ const App =  () => {
     return (
         <Fragment>
             <Header
-                title ="Rick and Morty"
+                title="Rick and Morty"
+          
             />
             <Characters/>
           
