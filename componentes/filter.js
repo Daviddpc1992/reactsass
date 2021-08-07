@@ -1,6 +1,8 @@
 import React from 'react';
 import '../src/main.sass'
-const Filter = ({}) => {
+const Filter = ({search}) => {
+
+    
     
     return (
         <div className="filtros">
@@ -26,7 +28,7 @@ const Filter = ({}) => {
 <div class="uk-margin">
     <form class="uk-search uk-search-default">
       
-        <input class="uk-search-input" type="search" placeholder="Search"/>
+                    <input class="uk-search-input" type="search" placeholder="Search" onChange={search}/>
     </form>
 
 </div>

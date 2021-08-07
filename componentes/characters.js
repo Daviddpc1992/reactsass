@@ -49,12 +49,14 @@ const Characters = () => {
         })
         .catch(error => console.log(error))
     }
-
+    // filterCharecters = (input) => {
+    //     console.log(this)
+    // }
     return (
         <div className="container">
             <div className="characters">
                 <div className="row">
-                <Filter/>
+                    <Filter />
                 {    
                         character.map(item => (
                 
